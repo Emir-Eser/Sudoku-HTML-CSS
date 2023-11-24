@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <style>
+
+            body
+            {
+
+                display: flex;
+
+                justify-content: center;
+
+                align-items: center;
+
+                background-color:white;
+
+            }
+
+            .big-table
+            {
+
+                width:540px;
+                height:540px;
+                margin-top:75px;
+                border: 10px solid rgb(240, 100, 110);
+                background-color:white;
+                border-radius:10px;
+
+
+            }
+
+            .td-big-table
+            {
+
+            }
+
+            .cell
+            {
+
+                width:165px;
+                height:165px;
+                border-collapse:collapse;
+                border: 5px solid rgb(255, 125, 125);
+                margin:auto;
+
+
+            }
+
+            .td-cell
+            {
+
+                text-align:center;
+                vertical-align:center;
+                background-color:white;
+                font-size:25px;
+                border: 3px solid rgb(255, 125, 125);
+
+
+            }
+
+            .td-cell:hover
+            {
+
+                color:white;
+                background-color:rgb(255, 125, 125);
+
+            }
+
+        </style>
+
+        <title>Sudoku</title>
+
+    </head>
+
+    <body>
+
+        <table class="big-table">
+
+            <tr class="tr-big-table">
+
+                <td class="td-big-table">
+
+                    <table class="cell">
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">7</td>
+
+                            <td class="td-cell">9</td>
+
+                            <td class="td-cell">3</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">4</td>
+
+                            <td class="td-cell">2</td>
+
+                            <td class="td-cell">6</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">1</td>
+
+                            <td class="td-cell">5</td>
+
+                            <td class="td-cell">8</td>
+
+                        </tr>
+
+                    </table>
+
+                </td>
+
+                <td class="td-big-table">
+
+                    <table class="cell">
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">6</td>
+
+                            <td class="td-cell">4</td>
+
+                            <td class="td-cell">2</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">8</td>
+
+                            <td class="td-cell">1</td>
+
+                            <td class="td-cell">5</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">3</td>
+
+                            <td class="td-cell">9</td>
+
+                            <td class="td-cell">7</td>
+
+                        </tr>
+
+                    </table>
+
+                </td>
+
+                <td class="td-big-table">
+
+                    <table class="cell">
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">5</td>
+
+                            <td class="td-cell">8</td>
+
+                            <td class="td-cell">1</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">7</td>
+
+                            <td class="td-cell">3</td>
+
+                            <td class="td-cell">9</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">2</td>
+
+                            <td class="td-cell">6</td>
+
+                            <td class="td-cell">4</td>
+
+                        </tr>
+
+                    </table>
+
+                </td>
+
+            </tr>
+
+            <tr class="tr-big-table">
+
+                <td class="td-big-table">
+
+                    <table class="cell">
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">5</td>
+
+                            <td class="td-cell">8</td>
+
+                            <td class="td-cell">1</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">2</td>
+
+                            <td class="td-cell">6</td>
+
+                            <td class="td-cell">4</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">9</td>
+
+                            <td class="td-cell">3</td>
+
+                            <td class="td-cell">7</td>
+
+                        </tr>
+
+                    </table>
+
+                </td>
+
+                <td class="td-big-table">
+
+                    <table class="cell">
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">9</td>
+
+                            <td class="td-cell">7</td>
+
+                            <td class="td-cell">3</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">1</td>
+
+                            <td class="td-cell">5</td>
+
+                            <td class="td-cell">8</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">4</td>
+
+                            <td class="td-cell">2</td>
+
+                            <td class="td-cell">6</td>
+
+                        </tr>
+
+                    </table>
+
+                </td>
+
+                <td class="td-big-table">
+
+                    <table class="cell">
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">6</td>
+
+                            <td class="td-cell">4</td>
+
+                            <td class="td-cell">2</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">3</td>
+
+                            <td class="td-cell">9</td>
+
+                            <td class="td-cell">7</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">8</td>
+
+                            <td class="td-cell">1</td>
+
+                            <td class="td-cell">5</td>
+
+                        </tr>
+
+                    </table>
+
+                </td>
+
+            </tr>
+
+            <tr class="tr-big-table">
+
+                <td class="td-big-table">
+
+                    <table class="cell">
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">3</td>
+
+                            <td class="td-cell">7</td>
+
+                            <td class="td-cell">9</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">8</td>
+
+                            <td class="td-cell">1</td>
+
+                            <td class="td-cell">5</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">6</td>
+
+                            <td class="td-cell">4</td>
+
+                            <td class="td-cell">2</td>
+
+                        </tr>
+
+                    </table>
+
+                </td>
+
+                <td class="td-big-table">
+
+                    <table class="cell">
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">2</td>
+
+                            <td class="td-cell">6</td>
+
+                            <td class="td-cell">4</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">7</td>
+
+                            <td class="td-cell">3</td>
+
+                            <td class="td-cell">9</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">5</td>
+
+                            <td class="td-cell">8</td>
+
+                            <td class="td-cell">1</td>
+
+                        </tr>
+
+                    </table>
+
+                </td>
+
+                <td class="td-big-table">
+
+                    <table class="cell">
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">1</td>
+
+                            <td class="td-cell">5</td>
+
+                            <td class="td-cell">8</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">4</td>
+
+                            <td class="td-cell">2</td>
+
+                            <td class="td-cell">6</td>
+
+                        </tr>
+
+                        <tr class="tr-cell">
+
+                            <td class="td-cell">3</td>
+
+                            <td class="td-cell">7</td>
+
+                            <td class="td-cell">3</td>
+
+                        </tr>
+
+                    </table>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </body>
+
+</html>
